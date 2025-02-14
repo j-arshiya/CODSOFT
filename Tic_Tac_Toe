@@ -1,0 +1,30 @@
+import random
+options = [rock, paper, scissor]
+
+user_choice = input("Enter the move: (rock, paper, scissor)= ")
+computer_choice = random.choice(options)
+
+print (f"Your choice = {user_choice} & Opponent choice = {computer_choice}")
+
+if (user_choice == computer_choice):
+  print("Match tied")
+
+elif user_choice == "rock":
+  if computer_choice == "paper":
+    print ("Opponent wins")
+  else:
+    print ("You win")
+
+elif user_choice == "paper":
+  if computer_choice == "rock":
+    print ("You win")
+
+  else:
+    print ("Computer wins")
+
+elif user_choice == "scissors":
+  if computer_choice == "rock":
+    print ("Computer wins")
+
+  else: 
+    print ("You win")
